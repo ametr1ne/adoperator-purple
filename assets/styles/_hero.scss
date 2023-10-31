@@ -8,6 +8,10 @@
     left: -71px;
   }
 
+  br {
+    display: none;
+  }
+
   &__title {
     text-align: center;
     margin-bottom: 16px;
@@ -44,6 +48,22 @@
       left: -19px;
       width: 118px;
       height: 134px;
+    }
+
+    &__title {
+      svg {
+        transform: translateY(6px);
+      }
+    }
+
+    &__desc {
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 130%;
+    }
+
+    br {
+      display: inline;
     }
 
     &__arrow {

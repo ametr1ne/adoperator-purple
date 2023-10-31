@@ -87,8 +87,28 @@
   }
 
   @media (max-width: $tablet) {
+    margin-bottom: 60px;
+
+    &__title {
+      display: inline;
+      max-width: 600px;
+
+      svg {
+        margin: 0 10px;
+        transform: translateY(10px);
+      }
+    }
+
     &__cards {
+      width: 100%;
       flex-direction: column;
+    }
+
+    &-card {
+      &__body {
+        flex-direction: row;
+        column-gap: 24px;
+      }
     }
   }
 }

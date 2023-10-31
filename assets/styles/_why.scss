@@ -54,4 +54,14 @@
     margin: 60px auto 0;
     width: fit-content;
   }
+
+  @media (max-width: $tablet) {
+    border-radius: 60px 60px 0px 0px;
+    padding: 60px 0 120px;
+
+    &-row {
+      flex-wrap: wrap;
+      row-gap: 40px;
+    }
+  }
 }
