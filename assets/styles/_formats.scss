@@ -1,0 +1,83 @@
+.formats {
+  margin-top: -120px;
+  padding: 120px 0;
+  border-radius: 120px 120px 0px 0px;
+  background: $purple;
+
+  &__title {
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    &::before {
+      content: url("../images/formats/band.svg");
+      position: absolute;
+      bottom: -105px;
+      z-index: -1;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__cards {
+    display: flex;
+    position: relative;
+    z-index: 2;
+  }
+
+  &-card {
+    border-radius: 32px;
+    border: 2px solid $black;
+    padding-bottom: 32px;
+    overflow: hidden;
+    flex: 1;
+
+    &__img {
+      width: 100%;
+    }
+
+    .img-wrapper {
+      border-radius: 32px;
+      overflow: hidden;
+      display: flex;
+      border: 1px solid $black;
+      margin: -1px -1px 0 -1px;
+    }
+
+    &__title {
+      padding: 32px 32px 24px;
+      color: white;
+      text-align: center;
+
+      font-family: Unbounded;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 120%;
+      letter-spacing: 0.28px;
+    }
+
+    &__desc {
+      padding: 0 32px;
+      color: white;
+      text-align: center;
+      font-variant-numeric: lining-nums proportional-nums;
+
+      font-family: Raleway;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 130%;
+    }
+
+    &:nth-child(2) {
+      position: relative;
+      margin: 0 -1px;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    &__cards {
+      flex-direction: column;
+    }
+  }
+}

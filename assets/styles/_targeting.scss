@@ -1,0 +1,51 @@
+.targeting {
+  margin: 0 0 120px;
+
+  &__title {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__row {
+    display: flex;
+    margin-top: -30px;
+  }
+
+  &-card {
+    border-radius: 32px;
+    border: 2px solid $black;
+    background: #f2f2f2;
+    padding: 24px;
+    height: 182px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    &:nth-child(2) {
+      margin-top: 10px;
+    }
+    &:nth-child(3) {
+      margin-top: 20px;
+    }
+    &:nth-child(4) {
+      margin-top: 30px;
+    }
+
+    img {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 24px;
+    }
+    p {
+      color: $black;
+      text-align: center;
+      font-variant-numeric: lining-nums proportional-nums;
+
+      font-family: Raleway;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 130%;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.digits {
+  margin: 104px 0 120px;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  &-row {
+    display: flex;
+    justify-content: space-between;
+
+    &:first-child {
+      width: 60%;
+    }
+    &:last-child {
+      width: 40%;
+    }
+  }
+
+  &-item {
+    h3 {
+      color: $yellow-100;
+      text-align: center;
+      font-family: Unbounded;
+      font-size: 71px;
+      font-weight: 700;
+      line-height: 53px;
+      letter-spacing: -7.81px;
+      margin-bottom: 24px;
+    }
+
+    p {
+      color: white;
+      text-align: center;
+      font-variant-numeric: lining-nums proportional-nums;
+
+      font-family: Raleway;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 130%;
+    }
+
+    &_divider {
+      margin-top: 44px;
+    }
+  }
+
+  &__btn {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}

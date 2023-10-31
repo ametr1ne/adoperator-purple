@@ -1,0 +1,45 @@
+.footer {
+  padding: 64px 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    p {
+      color: white;
+      font-variant-numeric: lining-nums proportional-nums;
+
+      font-family: Raleway;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 130%;
+    }
+  }
+
+  &__right {
+    display: flex;
+    column-gap: 32px;
+
+    a {
+      color: $gray-text;
+      text-align: center;
+      font-variant-numeric: lining-nums proportional-nums;
+
+      font-family: Raleway;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 130%;
+
+      &:hover {
+        color: $yellow-100;
+      }
+
+      &:active {
+        color: $yellow-200;
+      }
+    }
+  }
+}
