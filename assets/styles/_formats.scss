@@ -47,6 +47,110 @@
       border: 1px solid $black;
       background: #f2f2f2;
       margin: -1px -1px 0 -1px;
+
+      position: relative;
+
+      .push {
+        display: flex;
+        padding: 9px;
+        position: absolute;
+        border-radius: 6px;
+        background: $yellow-100;
+
+        h5 {
+          color: $black;
+          font-feature-settings: "calt" off;
+
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 130%;
+        }
+        p {
+          color: $black;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 130%;
+        }
+
+        &__icon {
+          width: 24px;
+          height: 24px;
+          margin-right: 8px;
+        }
+      }
+
+      .push-1 {
+        width: 263px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        p {
+          text-align: start;
+        }
+      }
+
+      .push-2 {
+        width: 263px;
+        padding: 16px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        flex-direction: column;
+        align-items: center;
+
+        .push__icon {
+          margin-bottom: 7px;
+          margin-right: 0;
+        }
+
+        .push__text {
+          text-align: center;
+          margin-bottom: 11px;
+        }
+
+        .push__btn {
+          padding: 4.8px 9.6px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 27.6px;
+
+          font-family: "Inter", sans-serif;
+          font-size: 9px;
+          font-weight: 600;
+          line-height: 150%;
+
+          border-radius: 27.6px;
+          color: $black;
+          border: 1px solid $black;
+          background: white;
+          box-shadow: 2.4px 2.4px 0px 0px #000;
+        }
+
+        svg {
+          position: absolute;
+          top: 6px;
+          right: 6px;
+        }
+      }
+
+      .push-3 {
+        width: 200px;
+        top: 50%;
+        left: 59%;
+        transform: translate(-50%, -50%);
+
+        svg {
+          position: absolute;
+          top: 6px;
+          right: 6px;
+        }
+
+        p {
+          text-align: start;
+        }
+      }
     }
 
     &__title {
@@ -101,6 +205,16 @@
       &:nth-child(2) {
         margin: -1px 0;
       }
+
+      .img-wrapper {
+        .push-3 {
+          left: 53%;
+
+          @media (max-width: 800px) {
+            left: 55%;
+          }
+        }
+      }
     }
 
     &__cards {
@@ -129,6 +243,18 @@
         border: none;
         border-bottom: 1px solid $black;
         margin: 0;
+
+        .push-3 {
+          left: 55%;
+
+          @media (max-width: 500px) {
+            left: 57%;
+          }
+
+          @media (max-width: 400px) {
+            left: 58%;
+          }
+        }
       }
 
       &__title {
