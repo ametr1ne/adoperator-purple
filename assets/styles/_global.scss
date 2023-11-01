@@ -172,6 +172,10 @@ h1 {
     line-height: 140%;
   }
 
+  .main {
+    padding-top: $header-height-sm;
+  }
+
   .btn {
     &_large,
     &_medium,

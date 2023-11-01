@@ -75,4 +75,35 @@
       }
     }
   }
+
+  @media (max-width: $mobile) {
+    margin: 40px 0;
+
+    &__items {
+      row-gap: 20px;
+    }
+
+    &-row {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    &-item_divider {
+      display: none;
+    }
+
+    &-item {
+      h3 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: -5.28px;
+        margin-bottom: 8px;
+      }
+    }
+
+    &__btn {
+      width: 100%;
+    }
+  }
 }
